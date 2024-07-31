@@ -118,3 +118,8 @@ BEGIN
 	WHERE events.id = _event_id;
 END
 $$ LANGUAGE plpgsql;
+
+
+-- Inserts Default Guest Users
+INSERT INTO users (username, password)
+VALUES ('guest', '1234'), ('guest2', '1234')
