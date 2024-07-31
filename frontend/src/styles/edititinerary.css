@@ -1,0 +1,159 @@
+.itinerary-name-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px solid black;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.itinerary-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    height: 400px;
+    padding: 50px;
+}
+
+textarea#edit-description {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 500px;
+
+    max-height: 100%;
+    min-height: 55px;
+    background-color: var(--bg-color);
+}
+
+#change-image {
+    display: none;
+}
+
+label[for="change-image"] {
+    height: 100%;
+    cursor: pointer;
+    transition: 0.25s;
+    border: 2px solid white;
+}
+
+label[for="change-image"]:hover {
+    border: 5px solid hsl(200, 100%, 50%);
+}
+
+.itinerary-info  img {
+    height: 100%;
+    min-width: 200px;
+}
+
+.itinerary-events {
+    position: relative;
+    left: calc((100% - 80%) / 2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    border: 1px solid white;
+}
+
+.itinerary-events th {
+    border: 1px solid white;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+}
+
+.itinerary-events td {
+    border: 1px solid white;
+    height: 40px;
+    text-align: center;
+}
+
+
+.add-event {
+    width: 500px;
+    position: relative;
+    left: calc(50vw - 250px);
+    background-color: green;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.edit-event {
+    width: 100%;
+    background-color: green;
+    border: 1px solid black;
+    height: 40px;
+}
+
+/* CHANGE DIALOG SECTION */
+
+.change-dialog {
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    background-color: var(--bg-dark);
+    left: calc(50% - 400px);
+    top: calc(50% - 40%);
+    box-shadow: 0px 0px 30px 20px black;
+
+    width: 800px;
+    height: 80%;
+    
+}
+
+.change-dialog h1 {
+    padding: 20px;
+}
+
+.change-dialog input, .change-dialog textarea {
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+textarea#desc {
+    width: 500px;
+    max-height: 300px;
+}
+
+.save-event {
+    width: 300px;
+    height: 40px;
+    background-color: green;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.time-container {
+    display: flex;
+    
+}
+
+.time-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.change-dialog .cancel-button {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
